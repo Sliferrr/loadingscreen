@@ -1,0 +1,30 @@
+/* Enlève toutes les marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body et html prennent tout l'écran */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Conteneur GIF plein écran */
+.gif-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GIF qui couvre tout l'écran */
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* remplit tout l'écran sans déformer */
+  display: block;
+}
